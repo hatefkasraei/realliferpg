@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_character_creation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="swagteam6.realliferpg.CharacterCreation">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessParent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/n"
+                    android:ems="10"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/editText2"
+                    android:labelFor="@+id/editText2" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="@string/char_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/textView5" />
+
+            </TableRow>
+            <RadioGroup>
+
+                <RadioButton
+                    android:text="@string/athlete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/radioAthlete"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:text="@string/programmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/radioProgrammer"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:text="@string/couchpotato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/radioCouch"
+                    android:onClick="onRadioButtonClicked" />
+
+
+                <RadioButton
+                    android:text="@string/engineer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioEngineer"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButtonClicked" />
+
+
+                <RadioButton
+                    android:text="@string/nurse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioNurse"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButtonClicked" />
+
+            </RadioGroup>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:text="@string/create_char_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonCreateChar"
+                    android:state_enabled="false"
+                    android:onClick="onButtonClicked"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

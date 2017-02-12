@@ -13,4 +13,16 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="n">Name</string>
+    <string name="view_profile">View Profile</string>
+    <string name="toggle_sound">Toggle Sound:</string>
+    <string name="char_class">Class:</string>
+    <string name="athlete">Athlete\nHP:12 Stamina:7 Intel:0 Strength:5 Agility:4 Luck:2</string>
+
+    <string name="programmer">Programmer\nHP:10 Stamina:6 Intel:6 Strength:3 Agility:3 Luck:2</string>
+
+    <string name="couchpotato">Couch Potato\nHP:20 Stamina:5 Intel:2 Strength:2 Agility:1 Luck:0</string>
+    <string name="engineer">Engineer\nHP:12 Stamina:6 Intel:6 Strength:1 Agility:2 Luck:3</string>
+    <string name="nurse">Nurse\nHP:13 Stamina:4 Intel:4 Strength:1 Agility:2 Luck:6</string>
+    <string name="create_char_btn">Create Character</string>
 </resources>
