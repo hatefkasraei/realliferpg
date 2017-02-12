@@ -3,6 +3,7 @@ package swagteam6.realliferpg;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -24,6 +25,17 @@ public class Profile extends AppCompatActivity {
         getSupportActionBar().hide();
         ImageButton ib = (ImageButton) findViewById(R.id.user_profile_photo);
         ib.bringToFront();
+
+        ProgressBar progress = (ProgressBar) findViewById(R.id.healthPBar);
+        progress.setProgress(50);
+        progress = (ProgressBar) findViewById(R.id.staminaPBar);
+        progress.setProgress(80);
+        progress = (ProgressBar) findViewById(R.id.intelligencePBar);
+        progress.setProgress(60);
+        progress = (ProgressBar) findViewById(R.id.strengthPBar);
+        progress.setProgress(20);
+        progress = (ProgressBar) findViewById(R.id.agilityPBar);
+        progress.setProgress(40);
 
         Bundle b = getIntent().getExtras();
         String userKey;
@@ -51,6 +63,7 @@ public class Profile extends AppCompatActivity {
                 String char_name = (String) dataSnapshot.child("char_name").getValue();
                 tv = (TextView) findViewById(R.id.user_profile_name);
                 tv.setText(char_name);
+
 
                 for(String attribute: ats.keySet()){
                     if (attribute.equals("agility")){
