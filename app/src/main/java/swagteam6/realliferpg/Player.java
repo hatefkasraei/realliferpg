@@ -12,7 +12,7 @@ public class Player{
     private mainClasses job;
 
     public Player(){
-        this("", 0.0, null);
+        this("", 0, null);
     }
 
     public Player(String nomen, int exp, mainClasses job){
@@ -42,4 +42,8 @@ public class Player{
         return job;
     }
 
+    public void takeDamage(double dmg){
+        double newHealth = job.getHealth() - dmg;
+        job.setHealth(newHealth);
+    }
 }
