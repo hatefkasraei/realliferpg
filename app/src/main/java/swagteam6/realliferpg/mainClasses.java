@@ -65,4 +65,9 @@ public class mainClasses {
     public double getLuck(){
         return luck;
     }
+
+    public boolean isAlive() {
+        return health > 0;
+    }
+
 }
