@@ -86,65 +86,157 @@
             android:layout_below="@+id/profile_layout"
             android:layout_marginTop="5dp"
             android:orientation="vertical">
-
             <TextView
-                android:id="@+id/user_attribute_health"
-                android:layout_width="fill_parent"
+                android:id="@+id/daily_task"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="#fff"
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="health" />
+                android:text="Today's quest: Walk 10 miles"
+                android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/user_attribute_stamina"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_marginBottom="3dp"
-                android:layout_marginTop="3dp"
-                android:background="#fff"
-                android:clickable="true"
-                android:elevation="4dp"
-                android:padding="20dp"
-                android:text="stamina" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/user_attribute_intelligence"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#fff"
-                android:clickable="true"
-                android:elevation="4dp"
-                android:padding="20dp"
-                android:text="intelligence" />
+                <TextView
+                    android:id="@+id/user_attribute_health"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="health"
+                    android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/user_attribute_strength"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_marginBottom="3dp"
-                android:layout_marginTop="3dp"
-                android:background="#fff"
-                android:clickable="true"
-                android:elevation="4dp"
-                android:padding="20dp"
-                android:text="strength" />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/healthPBar"
+                    android:layout_weight="6"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    />
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/user_attribute_agility"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#fff"
-                android:clickable="true"
-                android:elevation="4dp"
-                android:padding="20dp"
-                android:text="agility" />
+                <TextView
+                    android:id="@+id/user_attribute_stamina"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="stamina"
+                    android:layout_weight="1"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/staminaPBar"
+                    android:layout_weight="6"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    />
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user_attribute_intelligence"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="intelligence"
+                    android:layout_weight="1"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/intelligencePBar"
+                    android:layout_weight="6"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    />
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user_attribute_strength"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="strength"
+                    android:layout_weight="1"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/strengthPBar"
+                    android:layout_weight="6"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    />
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user_attribute_agility"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="agility"
+                    android:layout_weight="1"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/agilityPBar"
+                    android:layout_weight="6"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    />
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+            </LinearLayout>
+
 
             <TextView
                 android:id="@+id/user_attribute_luck"
