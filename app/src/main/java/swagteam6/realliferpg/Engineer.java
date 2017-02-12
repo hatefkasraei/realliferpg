@@ -5,9 +5,9 @@ package swagteam6.realliferpg;
  * Project RealLifeRPG
  */
 
-public class Nurse extends mainClasses{
+public class Engineer extends mainClasses{
 
-    public Nurse(){
-        super(8, 3, 3, 1, 2, 3);
+    public Engineer(){
+        super(7, 1, 6, 3, 2, 1);
     }
 }

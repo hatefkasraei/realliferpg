@@ -5,58 +5,41 @@ package swagteam6.realliferpg;
  * Project RealLifeRPG
  */
 
-public class Player {
+public class Player{
 
     private String name;
-    private int health, stamina, intelligence, strength, agility, luck;
+    private int experience;
+    private mainClasses job;
+
+    public Player(){
+        this("", 0.0, null);
+    }
+
+    public Player(String nomen, int exp, mainClasses job){
+        name = nomen;
+        experience = exp;
+        this.job = job;
+    }
 
     public void setName(String nomen){
         name = nomen;
     }
     public String getName(){
-        return new String(name);
+        return name;
     }
 
-    public void setHealth(int hp){
-        health = hp;
+    public void setExperience(int exp){
+        experience = exp;
     }
-    public int getHealth(){
-        return health;
-    }
-
-    public void setStamina(int mana){
-        stamina = mana;
-    }
-    public int getStamina(){
-        return stamina;
+    public int getExperience(){
+        return experience;
     }
 
-    public void setIntelligence(int intel){
-        intelligence = intel;
+    public void setJob(mainClasses job){
+        this.job = job;
     }
-    public int getIntelligence(){
-        return intelligence;
-    }
-
-    public void setStrength(int str){
-        strength = str;
-    }
-    public int getStrength(){
-        return strength;
-    }
-
-    public void setAgility(int speed){
-        agility = speed;
-    }
-    public int getAgility(){
-        return agility;
-    }
-
-    public void setLuck(int lck){
-        luck = lck;
-    }
-    public int getLuck(){
-        return luck;
+    public mainClasses getJob(){
+        return job;
     }
 
 }
