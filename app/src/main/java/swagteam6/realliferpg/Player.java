@@ -65,9 +65,4 @@ public class Player{
             expCap *= 2;
         }
     }
-
-    public void levelUP(int lvlup){
-        if(experience == expCap)
-            level++;
-    }
 }
