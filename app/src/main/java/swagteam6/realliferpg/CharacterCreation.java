@@ -1,7 +1,7 @@
 package swagteam6.realliferpg;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +19,7 @@ public class CharacterCreation extends AppCompatActivity {
         setContentView(R.layout.activity_character_creation);
         radioId = -1;
         btn = (Button) findViewById(R.id.buttonCreateChar);
+        btn.setEnabled(false);
         charName = (EditText) findViewById(R.id.editText2);
     }
 
@@ -43,5 +44,6 @@ public class CharacterCreation extends AppCompatActivity {
     public String getName() {
         return charNameString;
     }
+
 
 }
