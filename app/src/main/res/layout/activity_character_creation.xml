@@ -31,7 +31,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:text="@string/n"
+                    android:hint="@string/n"
                     android:ems="10"
                     android:layout_marginTop="24dp"
                     android:layout_marginStart="2dp"
@@ -51,39 +51,16 @@
                     android:id="@+id/textView5" />
 
             </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+            <RadioGroup>
 
                 <RadioButton
                     android:text="@string/athlete"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
+                    android:layout_marginBottom="5dp"
                     android:id="@+id/radioAthlete"
                     android:onClick="onRadioButtonClicked" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:text="@string/athleteStats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="2dp"
-                    android:id="@+id/textView6" />
-
-            </TableRow>
-
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <RadioButton
                     android:text="@string/programmer"
@@ -93,28 +70,8 @@
                     android:id="@+id/radioProgrammer"
                     android:onClick="onRadioButtonClicked" />
 
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:text="@string/programmerStats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="2dp"
-                    android:id="@+id/textView7" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
                 <RadioButton
-                    android:text="@string/coughpotato"
+                    android:text="@string/couchpotato"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -122,55 +79,17 @@
                     android:id="@+id/radioCouch"
                     android:onClick="onRadioButtonClicked" />
 
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:text="@string/couchpotatoStats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="2dp"
-                    android:id="@+id/textView8" />
-
-            </TableRow>
-
-
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <RadioButton
                     android:text="@string/engineer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioEngineer"
+                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginStart="10dp"
                     android:onClick="onRadioButtonClicked" />
-            </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:text="@string/engineerStats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="2dp"
-                    android:id="@+id/textView9" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <RadioButton
                     android:text="@string/nurse"
@@ -181,22 +100,8 @@
                     android:layout_marginStart="10dp"
                     android:onClick="onRadioButtonClicked" />
 
+            </RadioGroup>
 
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:text="@string/nurseStats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="2dp"
-                    android:id="@+id/textView10" />
-
-            </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
