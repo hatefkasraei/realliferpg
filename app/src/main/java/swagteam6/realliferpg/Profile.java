@@ -22,16 +22,32 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         getSupportActionBar().hide();
 
+        Bundle b = getIntent().getExtras();
+        String userKey;
+        String refLocation;
+        if (b != null){
+            userKey = b.getString("userKey");
+            refLocation = "/users/" + userKey;
+        }else{
+            refLocation = "/users/user1";
+        }
+
         database = FirebaseDatabase.getInstance();
-        DatabaseReference userRef = database.getReference("/users/user1");
+
+        DatabaseReference userRef = database.getReference(refLocation);
         userRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 HashMap<String,Integer> ats = (HashMap<String,Integer>)dataSnapshot.child("attributes").getValue();
                 String user_class = (String) dataSnapshot.child("class").getValue();
+                long user_level = (long) dataSnapshot.child("level").getValue();
 
                 TextView tv = (TextView) findViewById(R.id.user_class_level);
-                tv.setText(user_class);
+                tv.setText(user_class + ", Level: " + user_level);
+
+                String char_name = (String) dataSnapshot.child("char_name").getValue();
+                tv = (TextView) findViewById(R.id.user_profile_name);
+                tv.setText(char_name);
 
                 for(String attribute: ats.keySet()){
                     if (attribute.equals("agility")){
