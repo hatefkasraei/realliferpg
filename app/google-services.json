@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "138079207545",
+    "firebase_url": "https://realliferpg-3c3fc.firebaseio.com",
+    "project_id": "realliferpg-3c3fc",
+    "storage_bucket": "realliferpg-3c3fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138079207545:android:2a905a4d1da5590f",
+        "android_client_info": {
+          "package_name": "swagteam6.realliferpg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138079207545-dkkpea59outs2q5lsmgikuc2mc30d47b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "swagteam6.realliferpg",
+            "certificate_hash": "AC4A21CCBCB6D2B81FFF06CD4615D14CC570018A"
+          }
+        },
+        {
+          "client_id": "138079207545-85o7qc5lg3h2c1jpmcpb6fu91al2ubdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYmUEwzlv6M8yICQshQuFgoLdU0oIw0i0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138079207545-85o7qc5lg3h2c1jpmcpb6fu91al2ubdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
