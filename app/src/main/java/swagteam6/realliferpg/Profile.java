@@ -2,6 +2,7 @@ package swagteam6.realliferpg;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -21,6 +22,8 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         getSupportActionBar().hide();
+        ImageButton ib = (ImageButton) findViewById(R.id.user_profile_photo);
+        ib.bringToFront();
 
         Bundle b = getIntent().getExtras();
         String userKey;
