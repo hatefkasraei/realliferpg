@@ -1,5 +1,6 @@
 package swagteam6.realliferpg;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 
@@ -80,13 +81,18 @@ public class Login extends AppCompatActivity {
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.print("\n\n\nClicked!\n\n\n");
-                signIn(mEmailView.getText().toString(), mPasswordView.getText().toString());
+            launchActivity();
+                //signIn(mEmailView.getText().toString(), mPasswordView.getText().toString());
             }
         });
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+    }
+
+    private void launchActivity(){
+        Intent intent = new Intent(this, CharacterCreation.class);
+        startActivity(intent);
     }
 
     @Override
