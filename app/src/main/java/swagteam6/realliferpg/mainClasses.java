@@ -7,60 +7,62 @@ package swagteam6.realliferpg;
 
 public class mainClasses {
 
-    private int health, stamina, intelligence, strength, agility, luck;
+    private double health, stamina, intelligence, strength, agility, luck, damage;
 
-    public mainClasses(int hp, int mana, int intel, int str, int speed, int lck){
+    public mainClasses(double hp, double mana, double intel, double str,
+                       double speed, double lck){
         health = hp;
         stamina = mana;
         intelligence = intel;
         strength = str;
         agility = speed;
         luck = lck;
+        damage = str + (intel/2);
     }
 
     public mainClasses(){
-        this(0, 0, 0, 0, 0, 0);
+        this(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     }
 
-    public void setHealth(int hp){
+    public void setHealth(double hp){
         health = hp;
     }
-    public int getHealth(){
+    public double getHealth(){
         return health;
     }
 
-    public void setStamina(int mana){
+    public void setStamina(double mana){
         stamina = mana;
     }
-    public int getStamina(){
+    public double getStamina(){
         return stamina;
     }
 
-    public void setIntelligence(int intel){
+    public void setIntelligence(double intel){
         intelligence = intel;
     }
-    public int getIntelligence(){
+    public double getIntelligence(){
         return intelligence;
     }
 
-    public void setStrength(int str){
+    public void setStrength(double str){
         strength = str;
     }
-    public int getStrength(){
+    public double getStrength(){
         return strength;
     }
 
-    public void setAgility(int speed){
+    public void setAgility(double speed){
         agility = speed;
     }
-    public int getAgility(){
+    public double getAgility(){
         return agility;
     }
 
-    public void setLuck(int lck){
+    public void setLuck(double lck){
         luck = lck;
     }
-    public int getLuck(){
+    public double getLuck(){
         return luck;
     }
 }

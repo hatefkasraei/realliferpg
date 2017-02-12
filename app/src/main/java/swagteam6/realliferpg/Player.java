@@ -8,17 +8,20 @@ package swagteam6.realliferpg;
 public class Player{
 
     private String name;
-    private int experience;
+    private int experience, level, expCap;
     private mainClasses job;
 
-    public Player(){
-        this("", 0, null);
+
+    public Player(String nomen, mainClasses job){
+        name = nomen;
+        experience = 0;
+        level = 1;
+        expCap = 50;
+        this.job = job;
     }
 
-    public Player(String nomen, int exp, mainClasses job){
-        name = nomen;
-        experience = exp;
-        this.job = job;
+    public Player(){
+        this("", null);
     }
 
     public void setName(String nomen){
@@ -26,6 +29,13 @@ public class Player{
     }
     public String getName(){
         return name;
+    }
+
+    public void setLevel(int lvl){
+        level = lvl;
+    }
+    public int getLevel(){
+        return level;
     }
 
     public void setExperience(int exp){
@@ -45,5 +55,19 @@ public class Player{
     public void takeDamage(double dmg){
         double newHealth = job.getHealth() - dmg;
         job.setHealth(newHealth);
+    }
+
+    public void gainExperience(int exp){
+        experience += exp;
+        if (experience >= expCap){
+            level++;
+            experience = experience%expCap;
+            expCap *= 2;
+        }
+    }
+
+    public void levelUP(int lvlup){
+        if(experience == expCap)
+            level++;
     }
 }

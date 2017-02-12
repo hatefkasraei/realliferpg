@@ -7,8 +7,14 @@ package swagteam6.realliferpg;
 
 public class CouchPotato extends mainClasses {
 
+    private final double HP = 20;
+
     public CouchPotato(){
-        super(13, 2, 1, 3, 1, 0);
+        super(20, 5, 2, 2, 1, 0);
+    }
+
+    public void resetHP(){
+        setHealth(HP);
     }
 }
 

@@ -7,7 +7,13 @@ package swagteam6.realliferpg;
 
 public class Athlete extends mainClasses {
 
+    private final double HP = 12;
+
     public Athlete(){
-        super(8, 3, 0, 3, 4, 2);
+        super(12, 7, 0, 5, 4, 2);
+    }
+
+    public void resetHP(){
+        setHealth(HP);
     }
 }

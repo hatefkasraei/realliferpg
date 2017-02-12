@@ -7,7 +7,13 @@ package swagteam6.realliferpg;
 
 public class Nurse extends mainClasses{
 
+    private final double HP = 13;
+
     public Nurse(){
-        super(8, 3, 3, 1, 2, 3);
+        super(13, 4, 4, 1, 2, 6);
+    }
+
+    public void resetHP(){
+        setHealth(HP);
     }
 }
